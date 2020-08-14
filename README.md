@@ -26,6 +26,11 @@ netplan try ---> Esse comando valida a sintaxe do arquivo e vai aplicar as alter
          
           - "ip do túnnel"
 
-########## Ativar túnel GRE ##########
+########## Aplicando configurações nas interfaces GRE ##########
 
-ip link set nomedotúnel up
+ip link set nomedotúnel up ---> Ativa a interface do túnnel
+
+ip link delete nomedotúnel ---> Deleta o túnnel
+
+ip link show ---> visualiza o status das interfaces do túnnel GRE
+
