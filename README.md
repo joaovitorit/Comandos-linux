@@ -34,3 +34,23 @@ ip link delete nomedotúnel ---> Deleta o túnnel
 
 ip link show ---> visualiza o status das interfaces do túnnel GRE
 
+########## Aplicando configurações de fuso-horário no Ubuntu 18.04  Lts ##########
+
+timedatectl list-timezones ---> Comando para listar todos os time-zone do sistema.
+
+timedatectl list-timezones | grep America/Sao_Paulo ---> Comando para listar um timezone especifico no sistema.
+
+timedatectl set-timezone America/Sao_Paulo ---> Comando para setar um timezone especifico no sistema.
+
+timedatectl ---> Comando para vizualizar as informações de timezone do sistema.
+
+
+
+
+
+
+
+
+
+
+
