@@ -48,7 +48,13 @@ timedatectl ---> Comando para vizualizar as informações de timezone do sistema
 
 
 
+########### Gerando chave publica e privada no linux ###############
 
+ssh-keygen -t rsa -b 4096
+
+ssh-copy-id -i /caminhodiretório/name-file.pub root@104.248.2.220
+
+ssh -i /caminhodiretório//name-file.pub root@ip.do.destino
 
 
 
