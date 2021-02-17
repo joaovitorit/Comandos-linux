@@ -61,6 +61,24 @@ ssh -i /caminhodiretório//name-file.pub root@ip.do.destino
 
 lsblk -o +ROTA,DISC-GRAN
 
+########### Copiando arquivos entre servidores Linux ###############
+
+Copiando um arquivo remoto para máquina local:
+* scp user@domain:/pasta-remota/arquivo-remoto.txt /pasta-local/arquivo-local.txt
+
+Enviando um arquivo local para um servidor remoto:
+* scp /pasta-local/arquivo-local.txt user@domain:/pasta-remota/arquivo-remoto.txt
+
+Copiando pastas e subpastas do servidor remoto para máquina local:
+* scp -r user@domain:/pasta-remota/ /pasta-local/
+
+Enviando pastas e subpastas da máquina local para o servidor remoto:
+* scp -r /pasta-local/ user@domain:/pasta-remota/
+
+Créditos: https://udgwebdev.github.io/dicas-de-terminal-copiando-arquivos-via-scp/
+
+
+
 
 
 
